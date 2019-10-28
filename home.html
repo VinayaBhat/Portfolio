@@ -5,24 +5,41 @@
     <title>
         Vinaya Dattatraya Bhat
     </title>
+    <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />-->
     <style type="text/css">
-        * {
-            box-sizing: border-box;
-            background-color:black;
-            color:greenyellow;
-            font-family: cursive;
-
+        html {
+            min-width: 1000px;
         }
-     
+        body {
+            display: flex;
+            flex-direction: column;
+            background: #51d0de;
+        }
+        footer{
+            width: 100%;
+            flex:1;
+            background: black;
+            color: white;
+        }
+        
+        .flex_globalprop {
+            display: flex;
+            margin: auto;
+        }
 
-        .splittingpagestyle {
-            float: left;
-            width: 50%;
-            height: 50%;
-            padding: 10px;
-            align-content: center;
-            text-align: center;
-            font-family: cursive;
+        .nav_container {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .nav a {
+            text-decoration: none;
+            display: block;
+            padding: 0 1em;
+            color: white;
         }
 
         .display-picture {
@@ -30,82 +47,110 @@
             height: 450px;
             object-fit: cover;
             border-radius: 50%;
+        }      
+        .flex_name {
+            color: white;
+            flex: 1;
+            justify-content: flex-start;
+            padding: 2px;
+        }    
+
+        .blackbackground {
+            background: black;
         }
 
-        body h1 {
-            color:midnightblue;
-            font-size: 400%;
+        .flex_linkbuttons_end {
+            justify-content: flex-end;
         }
 
-        body h4 {
-            color:maroon;
+        .flex_designrows {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+
         }
 
-        .sectionstyle {
+        .flex_designrows>div {
+            width: 50%;
+            height: 500px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .first_page {
+            width: 100%;
+            height: 30%;
+            justify-content: center;
+            font-size: 1in;
+            font-weight: 700;
+            margin-top: 5%;
+        }
+
+        .intro {
             font-family: cursive;
-            text-align: justify;
-            animation: type 4s steps(60, end); 
-
-        }
-
-        .sectionhead {
+            align-content: left;
             text-align: left;
-            color:midnightblue;
+        }
+
+        .flexbox {
+            flex: 1 1 auto;
+            margin: 10px;
+            width: auto;
+            color: #bf4aa8;
+            font-weight: bold;
+            font-size: 0.2in;
         }       
-
-        a {
-            color:midnightblue;
-            text-decoration: none;
-            -webkit-transition: color 0.1s linear;
-            margin-right: 1cm;
-        }
-
-        a:hover {
-            color: #7fcd00;
-        }     
-        hr{
-            color: midnightblue;    
-
-        }
-               
-
-        .footerclass {
-            color:midnightblue;
-            font-size: x-small;
-        }
-        .align_right{
-            float:right;
-        }
     </style>
 </head>
 
 <body>
-    <div>
-        <div class="splittingpagestyle">
-            <img class="display-picture" src="profile.jpg">
-        </div>
-        <div class="splittingpagestyle">
-            <h4><a href="exercise3.html">HOME</a> <a href="page2.html">PROFILE</a><a href="page3.html">PROJECTS</a><a href="page4.html">MY CLICKS</a><a href="page5.html">CONTACT</a></h4>
-            <h1> Hi, I am Vinaya</h1>
-            <h4>CS Graduate Student | Code - Repeat | Amateur Photographer | Itinerant | Dark Chocolate Addict </h4>            
+    <nav class="flex_globalprop nav_container blackbackground">
+        <p class="flex_name">Vinaya Dattatraya Bhat</p>
+        <ul class="nav flex_globalprop flex_linkbuttons_end">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">My Clicks</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="flex_globalprop first_page">
+        <p>Hey There !<br>
+            I am Vinaya.</p>
+    </section>
+    <section class="flex_globalprop">
+        <div class="flexbox">CS Graduate Student</div>
+        <div class="flexbox">Amateur Photographer</div>
+        <div class="flexbox">Itinerant</div>
+        <div class="flexbox">Dark Chocolate Addict</div>
+    </section>
+
+    <div class="flex_designrows">
+        <div><img class="display-picture" src="profile.jpg"></div>
+        <div class="intro">
+            <h2>A Brief Introduction about myself......</h2>
+            <p style="text-align: justify;">Currently pursuing Masters in Computer Sciene at Portland State University.
+                Previously worked as a Senior Engineer at Nokia OSS R&D for 2 years.</p>
+            <ul style="text-align: left;">
+                <li>Designing and developing software by thinking "out of the box" solutions to problems.</li>
+                <li>Strong troubleshooting and problem solving skills with an analytical mindset.</li>
+                <li>Team Player with a can-do attitude.</li>
+            </ul>
+
         </div>
     </div>
     
-    <section class="sectionstyle">
-            <h2 class="sectionhead">A Brief Introduction about myself......</h2>
-            <p>Currently pursuing Masters in Computer Sciene at Portland State University.
-                Previously worked as a Senior Engineer at Nokia ODD R&D for 2 years.</p>
-               <p>Designing and developing software by thinking "out of the box" solutions to problems.
-                Strong troubleshooting and problem solving skills with an analytical mindset.
-                Team Player with a can-do attitude.
+    <footer>
+        <div>
+                <p style="text-align: left;margin-left: 1cm;">© 2019 Vinaya Dattatraya Bhat. All rights reserved.
+               <span style="float: right; margin-right: 1cm;">
+                <a href="http://github.com/VinayaBhat"><img style="border-radius: 30px;width:0.7cm;height:0.7cm;margin-right: 0.1cm;" src="Github.png"/></a>
+                <a href="http://www.linkedin.com/in/vinaya-bhat"><img style="width:0.7cm;height:0.7cm;" src="LinkedIn.jpg"/></a>
+            </span>
             </p>
-        </section>
-        <hr/>
-    <footer class="footerclass">
-        <p>Developed by: Vinaya Dattatraya Bhat.<span class="align_right">Updated on: 20 October 2019.</span></p>        
+            </div>       
     </footer>
 </body>
-
-
 
 </html>
