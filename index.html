@@ -24,7 +24,7 @@
             background: black;
             font-weight: bold;
             justify-content: end;
-            height: 0.5in;
+            height: 0.6in;
         }
 
         nav {
@@ -49,15 +49,14 @@
         }
 
         .smallintro {
-            border: black 1px solid;
+            border: solid 2px black;
             justify-content: center;
-            margin-left: 1cm;
-            margin-right: 1cm;
+            font-family: cursive;
         }
 
         .container {
-            margin-top: 2in;
-            margin-bottom: 1in;
+            margin-top: 3%;
+            margin-bottom: 10%;
             text-align: center;
         }
 
@@ -73,27 +72,41 @@
             font-weight: normal;
         }
 
-        .navbar-toggler {
-            width: 50px;
-            height: 30px;
-            background-color: #51d0de;
+      
+
+        .blue-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81, 208, 222, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+        .navbar-collapse .nav .nav-item .nav-link {
+            color: white;
+            background: black;
+            text-align: center;
+        }
+
+        .colstyle {
+            font-size: 100%;
+            height: auto;
+            width: auto;
+            padding: 1%;
+            overflow: auto;
         }
     </style>
 </head>
 
 <body>
     <nav class="navbar fixed-top navbar-expand-sm navbar-default ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-        </button>
+        <button class="navbar-toggler blue-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></button>
 
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="myclicks.html">My Clicks</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="navbar-nav ml-auto nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="myclicks.html">My Clicks</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -101,12 +114,14 @@
         <p>Hey There !<br>
             I am Vinaya.</p>
     </div>
-    <div class="d-flex flex-row smallintro">
-        <div class="p-2">Software Developer</div>
-        <div class="p-2">CS Graduate Student</div>
-        <div class="p-2">Itinerant</div>
-        <div class="p-2">Amateur Photographer</div>
-        <div class="p-2">Dark Chocolate Addict</div>
+    <div class="container smallintro">
+        <div class="row justify-content-center">
+            <div class="col-sm-2 colstyle">Software Developer</div>
+            <div class="col-sm-2 colstyle">CS Graduate Student</div>
+            <div class="col-sm-2 colstyle">Itinerant</div>
+            <div class="col-sm-2 colstyle">Amateur Photographer</div>
+            <div class="col-sm-2 colstyle">Dark Chocolate Addict</div>
+        </div>
     </div>
     <div class="container">
         <div class="row">
@@ -131,7 +146,7 @@
     </div>
 
 
-    <footer class="page-footer font-small pt-2">
+    <footer class="page-footer pt-3 font-small">
         <div class="text-center">
             <p style="text-align: center">© 2019 Vinaya Dattatraya Bhat. All rights reserved</p>
         </div>
