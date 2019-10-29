@@ -9,7 +9,6 @@
         body {
             background: #51d0de;
             font-family: Roboto;
-            min-width: 1000px;
         }
 
         footer {
@@ -27,7 +26,6 @@
             font-weight: bold;
             justify-content: end;
             height: 0.5in;
-            min-width: 1000px;
         }
 
         nav {
@@ -51,7 +49,8 @@
         }
 
         .colstyle {
-            border: 0.1in solid  #51d0de;;
+            border: 0.1in solid #51d0de;
+            ;
             background-clip: padding-box;
             background: white;
             border-radius: 15px;
@@ -60,77 +59,100 @@
 
 
         }
-        .colstyle img{
-            margin-top:0.1in;
-            margin-bottom: 0.1in;                       
+
+        .colstyle img {
+            margin-top: 0.1in;
+            margin-bottom: 0.1in;
         }
-        .coltextstyle{
-            margin-bottom:0.1in;
+
+        .coltextstyle {
+            margin-bottom: 0.1in;
         }
-        h5{
+
+        h5 {
             color: #bf4aa8;
             font-family: Georgia;
         }
-        h2{
+
+        h2 {
             margin-bottom: 0.2in;
-            color:black;        
-            font-weight: bold;    
+            color: black;
+            font-weight: bold;
         }
-        h4 a{
+
+        h4 a {
             color: black;
             text-decoration: underline;
+        }
+
+        .navbar-toggler {
+            width: 50px;
+            height: 30px;
+            background-color: #51d0de;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-default">
-        <ul class="navbar-nav ml-auto">
-            <li><a href="home_vdb.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>    
+    <nav class="navbar fixed-top navbar-expand-sm navbar-default ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        </button>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li><a href="home_vdb.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="container">
-            <h2>Find some of my recent projects below</h2>
+        <h2>Find some of my recent projects below</h2>
         <div class="row">
             <div class="col-lg-8 col-mg-12 col-sm-12 col-xs-12 colstyle">
-                <img src="https://img14.androidappsapk.co/300/1/7/4/puzzle2dgames.azmanone2048.pro2048puzzle.png" class="img-thumbnail">
+                <img src="https://img14.androidappsapk.co/300/1/7/4/puzzle2dgames.azmanone2048.pro2048puzzle.png"
+                    class="img-thumbnail">
                 <br>
-                <h4><a href="https://github.com/VinayaBhat/2048-with-Artificial-Intelligence.git" target="_blank">Solving the game of 2048 with Artificial Intelligence</a></h4>
+                <h4><a href="https://github.com/VinayaBhat/2048-with-Artificial-Intelligence.git"
+                        target="_blank">Solving the game of 2048 with Artificial Intelligence</a></h4>
                 <h5>Python</h5>
-                <p class="coltextstyle" style="text-align: justify;">Implemented the Minimax algorithm with and without alpha-beta pruning in Python. Compared the results obtained with Expectimax and Reinforcement learning algorithms. </p>
+                <p class="coltextstyle" style="text-align: justify;">Implemented the Minimax algorithm with and without
+                    alpha-beta pruning in Python. Compared the results obtained with Expectimax and Reinforcement
+                    learning algorithms. </p>
             </div>
             <div class="col-lg-8 col-mg-12 col-sm-12 col-xs-12 colstyle">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5IE1VRHycryC3_C_DriMoUC2Wpf9rifAd9QQGQgymgSwL3jvw&s" class="img-thumbnail">
-                    <br>
-                    <h4><a href="https://github.com/VinayaBhat/Breast-Cancer-Detection-using-Machine-Learning.git" target="_blank">Breast Cancer Diagnosis with Machine Learning</a></h4>
-                    <h5>Python</h5>
-                    <p class="coltextstyle" style="text-align: justify;">Developed Multi-layer Perceptron classifier in Python and tested on Breast Cancer Wisconsin Diagnostic Dataset. Compared the accuracy with Logistic Regression and K-means.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5IE1VRHycryC3_C_DriMoUC2Wpf9rifAd9QQGQgymgSwL3jvw&s"
+                    class="img-thumbnail">
+                <br>
+                <h4><a href="https://github.com/VinayaBhat/Breast-Cancer-Detection-using-Machine-Learning.git"
+                        target="_blank">Breast Cancer Diagnosis with Machine Learning</a></h4>
+                <h5>Python</h5>
+                <p class="coltextstyle" style="text-align: justify;">Developed Multi-layer Perceptron classifier in
+                    Python and tested on Breast Cancer Wisconsin Diagnostic Dataset. Compared the accuracy with Logistic
+                    Regression and K-means.</p>
             </div>
             <div class="col-lg-8 col-mg-12 col-sm-12 col-xs-12 colstyle">
-                    <img src="https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-220x234.png" class="img-thumbnail">
-                    <br>
-                    <h4><a href="https://github.com/VinayaBhat/Testing-PostgresSQl-with-Wisconsin-Benchmark.git" target="_blank">Benchmarking PostgreSQL Database</a></h4>
-                    <h5>Java</h5>
-                    <h5>PostgresSQL</h5>
-                    <p class="coltextstyle" style="text-align: justify;">Experimented with PostgreSQL configurations and various query optimization techniques to improve the performance of the database. Populated the database tables with millions of tuples using Java.</p>
-            </div>            
+                <img src="https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-220x234.png"
+                    class="img-thumbnail">
+                <br>
+                <h4><a href="https://github.com/VinayaBhat/Testing-PostgresSQl-with-Wisconsin-Benchmark.git"
+                        target="_blank">Benchmarking PostgreSQL Database</a></h4>
+                <h5>Java</h5>
+                <h5>PostgresSQL</h5>
+                <p class="coltextstyle" style="text-align: justify;">Experimented with PostgreSQL configurations and
+                    various query optimization techniques to improve the performance of the database. Populated the
+                    database tables with millions of tuples using Java.</p>
+            </div>
         </div>
     </div>
     <footer class="page-footer font-small pt-2">
-            <div class="text-left">
-                <p style="text-align: left;margin-left: 1cm;">© 2019 Vinaya Dattatraya Bhat. All rights reserved.
-                    <span style="float: right; margin-right: 1cm;">
-                        <a href="http://github.com/VinayaBhat"><img
-                                style="border-radius: 30px;width:0.7cm;height:0.7cm;margin-right: 0.1cm;"
-                                src="Github.png" /></a>
-                        <a href="http://www.linkedin.com/in/vinaya-bhat"><img style="width:0.7cm;height:0.7cm;"
-                                src="LinkedIn.jpg" /></a>
-            </div>
-        </footer>
+        <div class="text-center">
+            <p style="text-align: center">© 2019 Vinaya Dattatraya Bhat. All rights reserved</p>
+        </div>
+    </footer>
 
 
 

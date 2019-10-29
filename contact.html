@@ -6,11 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style type="text/css">
-    
         body {
             background: #51d0de;
             font-family: Roboto;
-            min-width: 1000px;
         }
 
         footer {
@@ -19,20 +17,14 @@
             position: relative;
             bottom: 0;
             padding: 0.2cm;
-            margin-top: 2in;            
+            margin-top: 2in;
         }
 
-
         .navbar-default {
-            background: black;
             font-weight: bold;
             justify-content: end;
             height: 0.5in;
-            min-width: 1000px;
-        }
-
-        nav {
-            min-width: 100%;
+            background: black;
         }
 
         .navbar-nav>li {
@@ -45,9 +37,9 @@
         }
 
         .jumbotron {
-            margin-top: 0.8in;
-            margin-left: 4in;
-            margin-right: 4in;
+            margin-top: 15%;
+            margin-left: 10%;
+            margin-right: 10%;
             text-align: center;
             background: white;
             font-weight: bold;
@@ -83,22 +75,29 @@
             color: black;
             border: #51d0de;
         }
+
+        .navbar-toggler {
+            width: 50px;
+            height: 30px;
+            background-color: #51d0de;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-default">
-        <button class="navbar-toggler" data-toggle="collapse">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-default ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
         </button>
-        <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-            <li><a href="home_vdb.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li><a href="home_vdb.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="jumbotron">
         <h3><a href="http://www.linkedin.com/in/vinaya-bhat"><img style="width: 0.6in;height:0.6in;"

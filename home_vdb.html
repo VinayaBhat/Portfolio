@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style type="text/css">
-    
         body {
             background: #51d0de;
             font-family: Roboto;
@@ -26,7 +25,6 @@
             font-weight: bold;
             justify-content: end;
             height: 0.5in;
-            min-width: 1000px;
         }
 
         nav {
@@ -44,17 +42,17 @@
 
         .fontstyle {
             font-weight: bold;
-            font-size: 1in;
+            font-size: 700%;
             text-align: center;
-            margin-top: 1.2in;
+            margin-top: 5%;
             color: black;
         }
 
         .smallintro {
             border: black 1px solid;
             justify-content: center;
-            margin-left:1cm;
-            margin-right: 1cm;            
+            margin-left: 1cm;
+            margin-right: 1cm;
         }
 
         .container {
@@ -74,17 +72,29 @@
             font-family: cursive;
             font-weight: normal;
         }
+
+        .navbar-toggler {
+            width: 50px;
+            height: 30px;
+            background-color: #51d0de;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-default">
-        <ul class="navbar-nav ml-auto">
-            <li><a href="home_vdb.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-default ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        </button>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li><a href="home_vdb.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="jumbrotron fontstyle">
         <p>Hey There !<br>
@@ -112,7 +122,8 @@
                     <li>Strong troubleshooting and problem solving skills with an analytical mindset.</li>
                     <li>Team Player with a can-do attitude.</li>
                 </ul>
-                <p style="text-align: justify;"><b><i>Actively looking for Winter/Spring 2020 Internships in software development.</i></b></p>
+                <p style="text-align: justify;"><b><i>Actively looking for Winter/Spring 2020 Internships in software
+                            development.</i></b></p>
 
             </div>
         </div>
@@ -120,15 +131,11 @@
 
 
     <footer class="page-footer font-small pt-2">
-        <div class="text-left">
-            <p style="text-align: left;margin-left: 1cm;">© 2019 Vinaya Dattatraya Bhat. All rights reserved.
-                <span style="float: right; margin-right: 1cm;">
-                    <a href="http://github.com/VinayaBhat"><img
-                            style="border-radius: 30px;width:0.7cm;height:0.7cm;margin-right: 0.1cm;"
-                            src="Github.png" /></a>
-                    <a href="http://www.linkedin.com/in/vinaya-bhat"><img style="width:0.7cm;height:0.7cm;"
-                            src="LinkedIn.jpg" /></a>
+        <div class="text-center">
+            <p style="text-align: center">© 2019 Vinaya Dattatraya Bhat. All rights reserved</p>
         </div>
+    </footer>
+
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
