@@ -21,6 +21,7 @@
         }
 
 
+        /*Navigation bar formatting to be black and have white links*/
         .navbar-default {
             background: black;
             font-weight: bold;
@@ -28,10 +29,7 @@
             height: 0.6in;
         }
 
-        nav {
-            min-width: 100%;
-        }
-
+        /*Padding right between links on nav bar is 0.5cm*/
         .navbar-nav>li {
             padding-right: 0.5cm;
         }
@@ -41,6 +39,19 @@
             font-family: Verdana;
         }
 
+        /*Hamburger icon pops up when page is resized.Hamburger icon formatting*/
+        .blue-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81, 208, 222, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+        /*Hamburger icon drop down menu formatting*/
+        .navbar-collapse .nav .nav-item .nav-link {
+            color: white;
+            background: black;
+            text-align: center;
+        }
+
+        /*Container formatting*/
         .container {
             margin-top: 1in;
             justify-content: center;
@@ -48,6 +59,7 @@
             text-align: center;
         }
 
+        /*Column formatting withing  row*/
         .colstyle {
             border: 0.1in solid #51d0de;
             ;
@@ -84,26 +96,15 @@
             color: black;
             text-decoration: underline;
         }
-
-
-        .blue-toggler .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81, 208, 222, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-        }
-
-        .navbar-collapse .nav .nav-item .nav-link {
-            color: white;
-            background: black;
-            text-align: center;
-        }
     </style>
 </head>
 
 <body>
+    <!--Navigation Bar-->
     <nav class="navbar fixed-top navbar-expand-sm navbar-default ">
         <button class="navbar-toggler blue-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></button>
-
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto nav">
@@ -115,7 +116,7 @@
             </ul>
         </div>
     </nav>
-
+    <!--Container is initialsed with a single row and 3 columns. Each column on a large screen takes 8 columns in the 12 column count of Bootstrap-->
     <div class="container">
         <h2>Find some of my recent projects below</h2>
         <div class="row">
@@ -155,6 +156,7 @@
             </div>
         </div>
     </div>
+    <!--Footer class-->
     <footer class="page-footer pt-3 font-small">
         <div class="text-center">
             <p style="text-align: center">© 2019 Vinaya Dattatraya Bhat. All rights reserved</p>

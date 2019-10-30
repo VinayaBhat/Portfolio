@@ -20,6 +20,7 @@
             margin-top: 2in;
         }
 
+        /*Navigation bar formatting*/
         .navbar-default {
             font-weight: bold;
             justify-content: end;
@@ -27,15 +28,30 @@
             background: black;
         }
 
+        /*Page resize hamburger icon*/
+        .blue-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81, 208, 222, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+        /*Page resize hamburger icon drop down menu format*/
+        .navbar-collapse .nav .nav-item .nav-link {
+            color: white;
+            background: black;
+            text-align: center;
+        }
+
+        /*Right padding between links on navigation bar*/
         .navbar-nav>li {
             padding-right: 0.5cm;
         }
 
+        /*Formatting the links to be white and have Verdana font on navigation bar*/
         .navbar-nav>li>a {
             color: white;
             font-family: Verdana;
         }
 
+        /*Using jumbotron to format You can connect with me section*/
         .jumbotron {
             margin-top: 15%;
             margin-left: 10%;
@@ -47,22 +63,32 @@
 
         }
 
-        #formstyle {
-            margin-top: 0.4in;
-        }
-
-        .jumbotron form {
-            text-align: left;
+        h3 {
+            padding: 2%;
             font-weight: bold;
-            font-size: 0.5cm;
+            text-align: center;
         }
 
+        /*Setting linkedIn Mail and Github image to be 0.5 *0.5 inches*/
         h3 img {
             width: 0.5in;
             width: 0.5in;
             margin-right: 1cm;
         }
 
+        /*adding 0.4 inch margin between 2 jumbotron div*/
+        #formstyle {
+            margin-top: 0.4in;
+        }
+
+        /*Formatting bootstrap form elements*/
+        .jumbotron form {
+            text-align: left;
+            font-weight: bold;
+            font-size: 0.5cm;
+        }
+
+        /*Submit button formatting*/
         .button_style {
             border-radius: 15px;
             background: black;
@@ -75,32 +101,15 @@
             color: black;
             border: #51d0de;
         }
-
-        h3{
-            padding: 2%;
-            font-weight: bold;
-            text-align: center;
-        }
-
-      
-
-        .blue-toggler .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81, 208, 222, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-        }
-
-        .navbar-collapse .nav .nav-item .nav-link {
-            color: white;
-            background: black;
-            text-align: center;
-        }
     </style>
 </head>
 
 <body>
+    <!--Using bootstrap classes along with fixed-top class to keep the navigation bar fixed on top-->
     <nav class="navbar fixed-top navbar-expand-sm navbar-default ">
-        <button class="navbar-toggler blue-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></button>
-
+        <button class="navbar-toggler blue-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></button>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto nav">
@@ -112,6 +121,7 @@
             </ul>
         </div>
     </nav>
+    <!--You can connect me with section with LinkedIn, Github and Mail icon which leads to respective pages-->
     <div class="jumbotron">
         <h3>You can connect with me</h3>
         <h3><a href="http://www.linkedin.com/in/vinaya-bhat"><img style="width: 0.6in;height:0.6in;"
@@ -121,7 +131,7 @@
             </a><a href="mailto:vinaya.dbhat@gmail.com"><img
                     src="https://icon-library.net/images/mail-icon-circle/mail-icon-circle-19.jpg"></a></h3>
     </div>
-
+    <!--Bootstrap form with jumbotron class-->
     <div class="jumbotron" id="formstyle">
         Contact Form
         <form class="form-horizonatal">
@@ -139,6 +149,7 @@
                 </div>
             </div>
         </form>
+        <!--Footer class-->
     </div>
     <footer class="page-footer pt-3 font-small">
         <div class="text-center">

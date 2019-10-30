@@ -19,19 +19,15 @@
             padding: 0.2cm;
             margin-top: 30%;
         }
-
-
-        .navbar-default {
+         /*Navigation bar formatting to be black and have white links*/
+         .navbar-default {
             background: black;
             font-weight: bold;
             justify-content: end;
             height: 0.6in;
         }
 
-        nav {
-            min-width: 100%;
-        }
-
+        /*Padding right between links on nav bar is 0.5cm*/
         .navbar-nav>li {
             padding-right: 0.5cm;
         }
@@ -41,12 +37,18 @@
             font-family: Verdana;
         }
 
-
-        
+        /*Hamburger icon pops up when page is resized.Hamburger icon formatting*/
         .blue-toggler .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81, 208, 222, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         }
 
+        /*Hamburger icon drop down menu formatting*/
+        .navbar-collapse .nav .nav-item .nav-link {
+            color: white;
+            background: black;
+            text-align: center;
+        }
+        /*Carousel formatting*/
         #vin_clicks_carousel {
             margin-top: 20%;
             text-align: center;
@@ -55,21 +57,15 @@
         #image_style {
             height: 50%;
             width: 50%;
-        }
-
-        .navbar-collapse .nav .nav-item .nav-link {
-            color: white;
-            background: black;
-            text-align: center;
-        }
+        }        
     </style>
 </head>
 
 <body>
+    <!--Navigation bar-->
     <nav class="navbar fixed-top navbar-expand-sm navbar-default ">
         <button class="navbar-toggler blue-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></button>
-
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto nav">
@@ -81,9 +77,8 @@
             </ul>
         </div>
     </nav>
-
+<!--Setting up a slide show of pictures with Bootstrap carousel-->
     <div id="vin_clicks_carousel" class="carousel slide" data-ride="carousel">
-
         <ol class="carousel-indicators">
             <li data-target="#vin_clicks_carousel" data-slide-to="0" class="active"></li>
             <li data-target="#vin_clicks_carousel" data-slide-to="1"></li>
@@ -142,16 +137,12 @@
         </a>
     </div>
 
-
+<!--Footer class-->
     <footer class="page-footer pt-3 font-small">
         <div class="text-center">
             <p style="text-align: center">© 2019 Vinaya Dattatraya Bhat. All rights reserved</p>
         </div>
     </footer>
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

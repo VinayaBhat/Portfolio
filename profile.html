@@ -20,7 +20,7 @@
             margin-top: 2in;
         }
 
-
+        /*Navigation bar formatting to be black and have white links*/
         .navbar-default {
             background: black;
             font-weight: bold;
@@ -28,10 +28,7 @@
             height: 0.6in;
         }
 
-        nav {
-            min-width: 100%;
-        }
-
+        /*Padding right between links on nav bar is 0.5cm*/
         .navbar-nav>li {
             padding-right: 0.5cm;
         }
@@ -41,6 +38,19 @@
             font-family: Verdana;
         }
 
+        /*Hamburger icon pops up when page is resized.Hamburger icon formatting*/
+        .blue-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81, 208, 222, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+        /*Hamburger icon drop down menu formatting*/
+        .navbar-collapse .nav .nav-item .nav-link {
+            color: white;
+            background: black;
+            text-align: center;
+        }
+
+        /*Topic Heading formatting*/
         .headcontainer {
             margin-bottom: 1%;
             margin-left: 5%;
@@ -53,6 +63,7 @@
             justify-content: center;
         }
 
+        /*Detail section formatting*/
         .contentcontainer {
             margin-bottom: 3%;
             margin-left: 10%;
@@ -62,26 +73,15 @@
             font-size: 0.5cm;
             padding-left: 0.3cm;
         }
-
-        
-
-        .blue-toggler .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81, 208, 222, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-        }
-
-        .navbar-collapse .nav .nav-item .nav-link {
-            color: white;
-            background: black;
-            text-align: center;
-        }
     </style>
 </head>
 
 <body>
+    <!--Navigation bar fixed on top-->
     <nav class="navbar fixed-top navbar-expand-sm navbar-default ">
-        <button class="navbar-toggler blue-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"> </button>
-
+        <button class="navbar-toggler blue-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"> </button>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto nav">
@@ -93,6 +93,7 @@
             </ul>
         </div>
     </nav>
+    <!--Education section-->
     <div class="row headcontainer" style="margin-top:2in">Education</div>
     <div class="row contentcontainer">
         <ul>
@@ -110,6 +111,7 @@
             </li>
         </ul>
     </div>
+    <!--Skills section-->
     <div class="row headcontainer">Skills</div>
     <div class="row contentcontainer">
         <ul>
@@ -121,6 +123,7 @@
             <li><b>Version control systems:</b> GIT, Maven </li>
         </ul>
     </div>
+    <!--Employment section-->
     <div class="row headcontainer">Employment</div>
     <div class="row contentcontainer">
         <ul style="list-style-type:none">
@@ -136,13 +139,15 @@
             <li>Worked on OS and application monitoring software such as Zabbix.</li>
         </ul>
     </div>
+    <!--Contact section-->
     <div class="row headcontainer">Contact</div>
-    <div class="row contentcontainer" style="margin-bottom: 2in;">        
+    <div class="row contentcontainer" style="margin-bottom: 2in;">
         <ul>
             <li>Phone: +1-503-933-0366</li>
-            <li>Email: vinaya.dbhat@gmail.com</li>            
+            <li>Email: vinaya.dbhat@gmail.com</li>
         </ul>
     </div>
+    <!--Footer class-->
     <footer class="page-footer pt-3 font-small">
         <div class="text-center">
             <p style="text-align: center">© 2019 Vinaya Dattatraya Bhat. All rights reserved</p>
